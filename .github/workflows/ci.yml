@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [main, develop, 'feature/**']
+
+permissions:
+  contents: read
+
+jobs:
+  build-dotnet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.0.x'
+      - name: Compilar y probar los proyectos que existan
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -d '' projects < <(find . -name '*.csproj' -print0)
+          if [ ${#projects[@]} -eq 0 ]; then
+            echo "::notice::Todavia no hay proyectos .NET"
+            exit 0
+          fi
+          for p in "${projects[@]}"; do
+            dotnet build "$p" --configuration Release
+            if [[ "$p" == *Test*.csproj ]]; then
+              dotnet test "$p" --configuration Release --no-build
+            fi
+          done
+
+  build-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '26'
+      - name: Revisar tipos de TypeScript
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f feature-frontend/tsconfig.json ]; then
+            npx --yes -p typescript@5 tsc --noEmit -p feature-frontend/tsconfig.json
+            exit 0
+          fi
+          mapfile -d '' files < <(find . -name '*.ts' -not -path '*/node_modules/*' -print0)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "::notice::Todavia no hay archivos TypeScript"
+            exit 0
+          fi
+          npx --yes -p typescript@5 tsc --noEmit --strict --target es2022 --module es2022 "${files[@]}"
