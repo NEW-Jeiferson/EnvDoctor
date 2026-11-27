@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "feature-infraestructura", "feature-infraestructura", "{609EEA9F-F0C7-56EA-AB4E-58D1C3E6643D}"
+	ProjectSection(SolutionItems) = preProject
+		feature-infraestructura\clases\ConfigFileDetector.cs = feature-infraestructura\clases\ConfigFileDetector.cs
+		feature-infraestructura\clases\DependencyValidator.cs = feature-infraestructura\clases\DependencyValidator.cs
+		feature-infraestructura\clases\DockerChecker.cs = feature-infraestructura\clases\DockerChecker.cs
+		feature-infraestructura\clases\Finding.cs = feature-infraestructura\clases\Finding.cs
+		feature-infraestructura\clases\PathGuard.cs = feature-infraestructura\clases\PathGuard.cs
+		feature-infraestructura\clases\PortChecker.cs = feature-infraestructura\clases\PortChecker.cs
+		feature-infraestructura\clases\ProjectScanner.cs = feature-infraestructura\clases\ProjectScanner.cs
+		feature-infraestructura\clases\ReportBuilder.cs = feature-infraestructura\clases\ReportBuilder.cs
+		feature-infraestructura\clases\RuleEngine.cs = feature-infraestructura\clases\RuleEngine.cs
+		feature-infraestructura\clases\SafeCommandRunner.cs = feature-infraestructura\clases\SafeCommandRunner.cs
+		feature-infraestructura\clases\ScanReport.cs = feature-infraestructura\clases\ScanReport.cs
+		feature-infraestructura\clases\Severity.cs = feature-infraestructura\clases\Severity.cs
+		feature-infraestructura\clases\ToolVersionChecker.cs = feature-infraestructura\clases\ToolVersionChecker.cs
+		feature-infraestructura\docs\05-entorno-desarrollo.md = feature-infraestructura\docs\05-entorno-desarrollo.md
+		feature-infraestructura\docs\06-despliegue.md = feature-infraestructura\docs\06-despliegue.md
+		feature-infraestructura\docs\07-gestion-configuracion.md = feature-infraestructura\docs\07-gestion-configuracion.md
+		feature-infraestructura\docs\13-bitacora-cambios.md = feature-infraestructura\docs\13-bitacora-cambios.md
+		feature-infraestructura\ramas\GUIA_RAMAS.md = feature-infraestructura\ramas\GUIA_RAMAS.md
+		feature-infraestructura\ramas\nombres-de-ramas.json = feature-infraestructura\ramas\nombres-de-ramas.json
+		feature-infraestructura\ramas\proteger-develop.json = feature-infraestructura\ramas\proteger-develop.json
+		feature-infraestructura\ramas\proteger-main.json = feature-infraestructura\ramas\proteger-main.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "feature-backend", "feature-backend", "{1811F894-3FA5-545A-962B-B6BDFF3A9939}"
+	ProjectSection(SolutionItems) = preProject
+		feature-backend\clases\AiClient.cs = feature-backend\clases\AiClient.cs
+		feature-backend\clases\AppDbContext.cs = feature-backend\clases\AppDbContext.cs
+		feature-backend\clases\AssistantController.cs = feature-backend\clases\AssistantController.cs
+		feature-backend\clases\AssistantService.cs = feature-backend\clases\AssistantService.cs
+		feature-backend\clases\ConsentService.cs = feature-backend\clases\ConsentService.cs
+		feature-backend\clases\FindingRecord.cs = feature-backend\clases\FindingRecord.cs
+		feature-backend\clases\Project.cs = feature-backend\clases\Project.cs
+		feature-backend\clases\ProjectService.cs = feature-backend\clases\ProjectService.cs
+		feature-backend\clases\ProjectsController.cs = feature-backend\clases\ProjectsController.cs
+		feature-backend\clases\ScanRecord.cs = feature-backend\clases\ScanRecord.cs
+		feature-backend\clases\ScanService.cs = feature-backend\clases\ScanService.cs
+		feature-backend\clases\ScansController.cs = feature-backend\clases\ScansController.cs
+		feature-backend\clases\SecretMasker.cs = feature-backend\clases\SecretMasker.cs
+		feature-backend\docs\02-arquitectura.md = feature-backend\docs\02-arquitectura.md
+		feature-backend\docs\04-api.md = feature-backend\docs\04-api.md
+		feature-backend\docs\08-seguridad-privacidad.md = feature-backend\docs\08-seguridad-privacidad.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "feature-frontend", "feature-frontend", "{0C6C17D6-4E51-5387-8529-730D5BA0CB37}"
+	ProjectSection(SolutionItems) = preProject
+		feature-frontend\ApiClient.ts = feature-frontend\ApiClient.ts
+		feature-frontend\ChatPanel.ts = feature-frontend\ChatPanel.ts
+		feature-frontend\ConsentDialog.ts = feature-frontend\ConsentDialog.ts
+		feature-frontend\FindingList.ts = feature-frontend\FindingList.ts
+		feature-frontend\ReportView.ts = feature-frontend\ReportView.ts
+		feature-frontend\ScanHistory.ts = feature-frontend\ScanHistory.ts
+		feature-frontend\docs\10-manual-usuario.md = feature-frontend\docs\10-manual-usuario.md
+		feature-frontend\index.html = feature-frontend\index.html
+		feature-frontend\styles.css = feature-frontend\styles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{071C1C75-23DE-5BD0-AB4A-B54BD4D66541}"
+	ProjectSection(SolutionItems) = preProject
+		docs\01-vision-alcance.md = docs\01-vision-alcance.md
+		docs\03-contrato-informe.md = docs\03-contrato-informe.md
+		docs\09-plan-pruebas.md = docs\09-plan-pruebas.md
+		docs\11-adr-plantilla.md = docs\11-adr-plantilla.md
+		docs\12-guion-demo.md = docs\12-guion-demo.md
+		docs\14-README-plantilla.md = docs\14-README-plantilla.md
+		docs\15-pull-request-plantilla.md = docs\15-pull-request-plantilla.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
