@@ -6,7 +6,10 @@
 
 ## [Sin publicar]
 
-<!-- Agregado / Cambiado / Corregido -->
+### Cambiado
+
+- 2026-11-27: las carpetas de cada integrante se organizaron por capas (src/ y tests/).
+- 2026-11-27: se actualizaron la solución, LEEME.md, los documentos 05 y 07, el RFC-001 y el reparto de tareas.
 
 ## [v0.1.0]
 

@@ -15,6 +15,14 @@
 | Docker | feature-infraestructura/docker/ y Dockerfile de cada parte | A |
 | Documentos y RFC | docs/ y docs/ de cada parte | Todos |
 
+## Organización de carpetas
+
+| Carpeta | Contenido |
+|---|---|
+| feature-infraestructura/ | src/, tests/, docker/, docs/ y ramas/ |
+| feature-backend/ | src/ (Controllers, Services, Data, Ai, Security) y docs/ |
+| feature-frontend/ | index.html, styles.css, src/ (api, components), Dockerfile y docs/ |
+
 ## Estrategia de ramas
 
 main (estable), develop (integración) y feature/*. Detalle en feature-infraestructura/ramas/GUIA_RAMAS.md.
