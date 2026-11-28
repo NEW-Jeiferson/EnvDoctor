@@ -1,25 +1,29 @@
 # Visión y alcance
 
 **Responsable:** Todos  
-**Versión:** _  
-**Fecha:** _
+**Versión:** 0.1  
+**Fecha:** 2026-11-27
+
+**Estado:** borrador de A a partir de la propuesta; falta revisión de B y C.
 
 ## Problema
 
-<!-- Qué problema se resuelve y a quién afecta -->
+Un proyecto funciona en una computadora y falla en otra por diferencias de versiones, dependencias, variables, puertos o servicios.
 
 ## Objetivos
 
-<!-- Objetivos medibles -->
+- Detectar los archivos de configuración de un proyecto sin ejecutar su código.
+- Entregar hallazgos priorizados con evidencia y recomendación.
+- Explicar los hallazgos con ayuda de IA, con consentimiento del usuario.
 
 ## Dentro del alcance
 
-<!-- Qué incluye la primera versión -->
+Escaneo local, reglas deterministas para .NET y Node.js, informe web y asistente con IA.
 
 ## Fuera del alcance
 
-<!-- Qué se deja para después -->
+Reparaciones automáticas, ejecución de scripts del proyecto analizado y reglas para Python en la primera versión.
 
 ## Criterios de éxito
 
-<!-- Cómo se sabrá que está terminado -->
+Las comprobaciones se demuestran en vivo sobre proyectos con fallos intencionales y no se envían secretos a la IA.
