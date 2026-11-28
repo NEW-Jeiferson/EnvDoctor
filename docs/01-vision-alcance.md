@@ -4,7 +4,7 @@
 **Versión:** 0.1  
 **Fecha:** 2026-11-27
 
-**Estado:** borrador de A a partir de la propuesta; falta revisión de B y C.
+**Estado:** borrador de A a partir de la propuesta; revisado por C, falta revisión de B.
 
 ## Problema
 
@@ -18,7 +18,7 @@ Un proyecto funciona en una computadora y falla en otra por diferencias de versi
 
 ## Dentro del alcance
 
-Escaneo local, reglas deterministas para .NET y Node.js, informe web y asistente con IA.
+Escaneo local, reglas deterministas para .NET y Node.js, comprobaciones básicas de Docker y puertos, informe web y asistente con IA.
 
 ## Fuera del alcance
 
