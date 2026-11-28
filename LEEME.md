@@ -1,8 +1,8 @@
 # EnvDoctor: paquete inicial
 
 - EnvDoctor_Tareas_ABC.pdf: qué hace cada persona en las 3 fases.
-- feature-infraestructura/ (A): clases del escáner, docs y ramas.
-- feature-backend/ (B): clases y docs.
+- feature-infraestructura/ (A): src/, tests/, docker/, docs/ y ramas/.
+- feature-backend/ (B): src/ y docs/.
 - feature-frontend/ (C): HTML, CSS, TypeScript y docs.
 - docs/: plantillas compartidas.
 

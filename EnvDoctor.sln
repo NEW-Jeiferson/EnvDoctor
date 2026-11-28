@@ -3,64 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "feature-infraestructura", "feature-infraestructura", "{609EEA9F-F0C7-56EA-AB4E-58D1C3E6643D}"
-	ProjectSection(SolutionItems) = preProject
-		feature-infraestructura\clases\ConfigFileDetector.cs = feature-infraestructura\clases\ConfigFileDetector.cs
-		feature-infraestructura\clases\DependencyValidator.cs = feature-infraestructura\clases\DependencyValidator.cs
-		feature-infraestructura\clases\DockerChecker.cs = feature-infraestructura\clases\DockerChecker.cs
-		feature-infraestructura\clases\Finding.cs = feature-infraestructura\clases\Finding.cs
-		feature-infraestructura\clases\PathGuard.cs = feature-infraestructura\clases\PathGuard.cs
-		feature-infraestructura\clases\PortChecker.cs = feature-infraestructura\clases\PortChecker.cs
-		feature-infraestructura\clases\ProjectScanner.cs = feature-infraestructura\clases\ProjectScanner.cs
-		feature-infraestructura\clases\ReportBuilder.cs = feature-infraestructura\clases\ReportBuilder.cs
-		feature-infraestructura\clases\RuleEngine.cs = feature-infraestructura\clases\RuleEngine.cs
-		feature-infraestructura\clases\SafeCommandRunner.cs = feature-infraestructura\clases\SafeCommandRunner.cs
-		feature-infraestructura\clases\ScanReport.cs = feature-infraestructura\clases\ScanReport.cs
-		feature-infraestructura\clases\Severity.cs = feature-infraestructura\clases\Severity.cs
-		feature-infraestructura\clases\ToolVersionChecker.cs = feature-infraestructura\clases\ToolVersionChecker.cs
-		feature-infraestructura\docs\05-entorno-desarrollo.md = feature-infraestructura\docs\05-entorno-desarrollo.md
-		feature-infraestructura\docs\06-despliegue.md = feature-infraestructura\docs\06-despliegue.md
-		feature-infraestructura\docs\07-gestion-configuracion.md = feature-infraestructura\docs\07-gestion-configuracion.md
-		feature-infraestructura\docs\13-bitacora-cambios.md = feature-infraestructura\docs\13-bitacora-cambios.md
-		feature-infraestructura\ramas\GUIA_RAMAS.md = feature-infraestructura\ramas\GUIA_RAMAS.md
-		feature-infraestructura\ramas\nombres-de-ramas.json = feature-infraestructura\ramas\nombres-de-ramas.json
-		feature-infraestructura\ramas\proteger-develop.json = feature-infraestructura\ramas\proteger-develop.json
-		feature-infraestructura\ramas\proteger-main.json = feature-infraestructura\ramas\proteger-main.json
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "feature-backend", "feature-backend", "{1811F894-3FA5-545A-962B-B6BDFF3A9939}"
-	ProjectSection(SolutionItems) = preProject
-		feature-backend\clases\AiClient.cs = feature-backend\clases\AiClient.cs
-		feature-backend\clases\AppDbContext.cs = feature-backend\clases\AppDbContext.cs
-		feature-backend\clases\AssistantController.cs = feature-backend\clases\AssistantController.cs
-		feature-backend\clases\AssistantService.cs = feature-backend\clases\AssistantService.cs
-		feature-backend\clases\ConsentService.cs = feature-backend\clases\ConsentService.cs
-		feature-backend\clases\FindingRecord.cs = feature-backend\clases\FindingRecord.cs
-		feature-backend\clases\Project.cs = feature-backend\clases\Project.cs
-		feature-backend\clases\ProjectService.cs = feature-backend\clases\ProjectService.cs
-		feature-backend\clases\ProjectsController.cs = feature-backend\clases\ProjectsController.cs
-		feature-backend\clases\ScanRecord.cs = feature-backend\clases\ScanRecord.cs
-		feature-backend\clases\ScanService.cs = feature-backend\clases\ScanService.cs
-		feature-backend\clases\ScansController.cs = feature-backend\clases\ScansController.cs
-		feature-backend\clases\SecretMasker.cs = feature-backend\clases\SecretMasker.cs
-		feature-backend\docs\02-arquitectura.md = feature-backend\docs\02-arquitectura.md
-		feature-backend\docs\04-api.md = feature-backend\docs\04-api.md
-		feature-backend\docs\08-seguridad-privacidad.md = feature-backend\docs\08-seguridad-privacidad.md
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "feature-frontend", "feature-frontend", "{0C6C17D6-4E51-5387-8529-730D5BA0CB37}"
-	ProjectSection(SolutionItems) = preProject
-		feature-frontend\ApiClient.ts = feature-frontend\ApiClient.ts
-		feature-frontend\ChatPanel.ts = feature-frontend\ChatPanel.ts
-		feature-frontend\ConsentDialog.ts = feature-frontend\ConsentDialog.ts
-		feature-frontend\FindingList.ts = feature-frontend\FindingList.ts
-		feature-frontend\ReportView.ts = feature-frontend\ReportView.ts
-		feature-frontend\ScanHistory.ts = feature-frontend\ScanHistory.ts
-		feature-frontend\docs\10-manual-usuario.md = feature-frontend\docs\10-manual-usuario.md
-		feature-frontend\index.html = feature-frontend\index.html
-		feature-frontend\styles.css = feature-frontend\styles.css
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{071C1C75-23DE-5BD0-AB4A-B54BD4D66541}"
 	ProjectSection(SolutionItems) = preProject
 		docs\01-vision-alcance.md = docs\01-vision-alcance.md
@@ -72,13 +14,118 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{071C1C75-2
 		docs\15-pull-request-plantilla.md = docs\15-pull-request-plantilla.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "clases", "clases", "{B8A7289B-BAE5-ECB2-75DB-2A9598D79511}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rfc", "rfc", "{B10CA2F2-0C87-53EA-AAEA-1EFE6AB6F73C}"
+	ProjectSection(SolutionItems) = preProject
+		docs\rfc\RFC-000-plantilla.md = docs\rfc\RFC-000-plantilla.md
+		docs\rfc\RFC-001-fase1-infraestructura.md = docs\rfc\RFC-001-fase1-infraestructura.md
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvDoctor.Cli", "feature-infraestructura\clases\EnvDoctor.Cli.csproj", "{8EC29F19-6A71-4B64-B4C0-B2BEA0673CBC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "feature-backend", "feature-backend", "{1811F894-3FA5-545A-962B-B6BDFF3A9939}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pruebas", "pruebas", "{AE2DA2AC-10BB-0C40-43BD-CD1B19C84E76}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{24169738-C2CE-5BEA-85DE-8AD881F7BE7A}"
+	ProjectSection(SolutionItems) = preProject
+		feature-backend\docs\02-arquitectura.md = feature-backend\docs\02-arquitectura.md
+		feature-backend\docs\04-api.md = feature-backend\docs\04-api.md
+		feature-backend\docs\08-seguridad-privacidad.md = feature-backend\docs\08-seguridad-privacidad.md
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvDoctor.Cli.Tests", "feature-infraestructura\pruebas\EnvDoctor.Cli.Tests.csproj", "{E7D30CB0-ABE5-4193-8467-09DD0F206914}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B3325D3E-9A1E-5C1F-838E-2901928B5C54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ai", "Ai", "{A2C17802-A2A0-57FD-A502-3562DA058185}"
+	ProjectSection(SolutionItems) = preProject
+		feature-backend\src\Ai\AiClient.cs = feature-backend\src\Ai\AiClient.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{E3C27D71-F96E-58D9-B19F-84F340564D38}"
+	ProjectSection(SolutionItems) = preProject
+		feature-backend\src\Controllers\AssistantController.cs = feature-backend\src\Controllers\AssistantController.cs
+		feature-backend\src\Controllers\ProjectsController.cs = feature-backend\src\Controllers\ProjectsController.cs
+		feature-backend\src\Controllers\ScansController.cs = feature-backend\src\Controllers\ScansController.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{784E2DDF-8994-55F6-8D07-5342593CB824}"
+	ProjectSection(SolutionItems) = preProject
+		feature-backend\src\Data\AppDbContext.cs = feature-backend\src\Data\AppDbContext.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{EB562676-F2E2-5D21-A1CB-6EE0EEF8235A}"
+	ProjectSection(SolutionItems) = preProject
+		feature-backend\src\Data\Entities\FindingRecord.cs = feature-backend\src\Data\Entities\FindingRecord.cs
+		feature-backend\src\Data\Entities\Project.cs = feature-backend\src\Data\Entities\Project.cs
+		feature-backend\src\Data\Entities\ScanRecord.cs = feature-backend\src\Data\Entities\ScanRecord.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{9AD88D5D-8BB7-5046-AD92-5551DC81D338}"
+	ProjectSection(SolutionItems) = preProject
+		feature-backend\src\Security\SecretMasker.cs = feature-backend\src\Security\SecretMasker.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{859E305E-CE38-50D1-B978-F43C6BD38D91}"
+	ProjectSection(SolutionItems) = preProject
+		feature-backend\src\Services\AssistantService.cs = feature-backend\src\Services\AssistantService.cs
+		feature-backend\src\Services\ConsentService.cs = feature-backend\src\Services\ConsentService.cs
+		feature-backend\src\Services\ProjectService.cs = feature-backend\src\Services\ProjectService.cs
+		feature-backend\src\Services\ScanService.cs = feature-backend\src\Services\ScanService.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "feature-frontend", "feature-frontend", "{0C6C17D6-4E51-5387-8529-730D5BA0CB37}"
+	ProjectSection(SolutionItems) = preProject
+		feature-frontend\Dockerfile = feature-frontend\Dockerfile
+		feature-frontend\index.html = feature-frontend\index.html
+		feature-frontend\styles.css = feature-frontend\styles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{7BAD030C-D406-53DF-8934-1DCA2951F91A}"
+	ProjectSection(SolutionItems) = preProject
+		feature-frontend\docs\10-manual-usuario.md = feature-frontend\docs\10-manual-usuario.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{19D7B137-94B0-54ED-8C95-96B064F854BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{5475A403-5B80-5987-ADAF-2483B0852DB8}"
+	ProjectSection(SolutionItems) = preProject
+		feature-frontend\src\api\ApiClient.ts = feature-frontend\src\api\ApiClient.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{F308794A-17D3-5429-BB46-C4A378319795}"
+	ProjectSection(SolutionItems) = preProject
+		feature-frontend\src\components\ChatPanel.ts = feature-frontend\src\components\ChatPanel.ts
+		feature-frontend\src\components\ConsentDialog.ts = feature-frontend\src\components\ConsentDialog.ts
+		feature-frontend\src\components\FindingList.ts = feature-frontend\src\components\FindingList.ts
+		feature-frontend\src\components\ReportView.ts = feature-frontend\src\components\ReportView.ts
+		feature-frontend\src\components\ScanHistory.ts = feature-frontend\src\components\ScanHistory.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "feature-infraestructura", "feature-infraestructura", "{609EEA9F-F0C7-56EA-AB4E-58D1C3E6643D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{424CB8DB-68FB-5FEB-9F87-AE4E238054B0}"
+	ProjectSection(SolutionItems) = preProject
+		feature-infraestructura\docker\docker-compose.yml = feature-infraestructura\docker\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{618C3ACF-38FE-5F7B-A3E4-449A3F1A31E4}"
+	ProjectSection(SolutionItems) = preProject
+		feature-infraestructura\docs\05-entorno-desarrollo.md = feature-infraestructura\docs\05-entorno-desarrollo.md
+		feature-infraestructura\docs\06-despliegue.md = feature-infraestructura\docs\06-despliegue.md
+		feature-infraestructura\docs\07-gestion-configuracion.md = feature-infraestructura\docs\07-gestion-configuracion.md
+		feature-infraestructura\docs\13-bitacora-cambios.md = feature-infraestructura\docs\13-bitacora-cambios.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ramas", "ramas", "{F69C8885-A296-5E33-85C4-2EAF07262448}"
+	ProjectSection(SolutionItems) = preProject
+		feature-infraestructura\ramas\GUIA_RAMAS.md = feature-infraestructura\ramas\GUIA_RAMAS.md
+		feature-infraestructura\ramas\nombres-de-ramas.json = feature-infraestructura\ramas\nombres-de-ramas.json
+		feature-infraestructura\ramas\proteger-develop.json = feature-infraestructura\ramas\proteger-develop.json
+		feature-infraestructura\ramas\proteger-main.json = feature-infraestructura\ramas\proteger-main.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7E0CA5D2-F91A-50EF-B004-EF451A569AC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8CCA616B-DF52-52CE-A17E-02E6A6782E81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvDoctor.Cli", "feature-infraestructura\src\EnvDoctor.Cli\EnvDoctor.Cli.csproj", "{8EC29F19-6A71-4B64-B4C0-B2BEA0673CBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvDoctor.Cli.Tests", "feature-infraestructura\tests\EnvDoctor.Cli.Tests\EnvDoctor.Cli.Tests.csproj", "{E7D30CB0-ABE5-4193-8467-09DD0F206914}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,9 +166,25 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B8A7289B-BAE5-ECB2-75DB-2A9598D79511} = {609EEA9F-F0C7-56EA-AB4E-58D1C3E6643D}
-		{8EC29F19-6A71-4B64-B4C0-B2BEA0673CBC} = {B8A7289B-BAE5-ECB2-75DB-2A9598D79511}
-		{AE2DA2AC-10BB-0C40-43BD-CD1B19C84E76} = {609EEA9F-F0C7-56EA-AB4E-58D1C3E6643D}
-		{E7D30CB0-ABE5-4193-8467-09DD0F206914} = {AE2DA2AC-10BB-0C40-43BD-CD1B19C84E76}
+		{B10CA2F2-0C87-53EA-AAEA-1EFE6AB6F73C} = {071C1C75-23DE-5BD0-AB4A-B54BD4D66541}
+		{24169738-C2CE-5BEA-85DE-8AD881F7BE7A} = {1811F894-3FA5-545A-962B-B6BDFF3A9939}
+		{B3325D3E-9A1E-5C1F-838E-2901928B5C54} = {1811F894-3FA5-545A-962B-B6BDFF3A9939}
+		{A2C17802-A2A0-57FD-A502-3562DA058185} = {B3325D3E-9A1E-5C1F-838E-2901928B5C54}
+		{E3C27D71-F96E-58D9-B19F-84F340564D38} = {B3325D3E-9A1E-5C1F-838E-2901928B5C54}
+		{784E2DDF-8994-55F6-8D07-5342593CB824} = {B3325D3E-9A1E-5C1F-838E-2901928B5C54}
+		{EB562676-F2E2-5D21-A1CB-6EE0EEF8235A} = {784E2DDF-8994-55F6-8D07-5342593CB824}
+		{9AD88D5D-8BB7-5046-AD92-5551DC81D338} = {B3325D3E-9A1E-5C1F-838E-2901928B5C54}
+		{859E305E-CE38-50D1-B978-F43C6BD38D91} = {B3325D3E-9A1E-5C1F-838E-2901928B5C54}
+		{7BAD030C-D406-53DF-8934-1DCA2951F91A} = {0C6C17D6-4E51-5387-8529-730D5BA0CB37}
+		{19D7B137-94B0-54ED-8C95-96B064F854BA} = {0C6C17D6-4E51-5387-8529-730D5BA0CB37}
+		{5475A403-5B80-5987-ADAF-2483B0852DB8} = {19D7B137-94B0-54ED-8C95-96B064F854BA}
+		{F308794A-17D3-5429-BB46-C4A378319795} = {19D7B137-94B0-54ED-8C95-96B064F854BA}
+		{424CB8DB-68FB-5FEB-9F87-AE4E238054B0} = {609EEA9F-F0C7-56EA-AB4E-58D1C3E6643D}
+		{618C3ACF-38FE-5F7B-A3E4-449A3F1A31E4} = {609EEA9F-F0C7-56EA-AB4E-58D1C3E6643D}
+		{F69C8885-A296-5E33-85C4-2EAF07262448} = {609EEA9F-F0C7-56EA-AB4E-58D1C3E6643D}
+		{7E0CA5D2-F91A-50EF-B004-EF451A569AC8} = {609EEA9F-F0C7-56EA-AB4E-58D1C3E6643D}
+		{8CCA616B-DF52-52CE-A17E-02E6A6782E81} = {609EEA9F-F0C7-56EA-AB4E-58D1C3E6643D}
+		{8EC29F19-6A71-4B64-B4C0-B2BEA0673CBC} = {7E0CA5D2-F91A-50EF-B004-EF451A569AC8}
+		{E7D30CB0-ABE5-4193-8467-09DD0F206914} = {8CCA616B-DF52-52CE-A17E-02E6A6782E81}
 	EndGlobalSection
 EndGlobal

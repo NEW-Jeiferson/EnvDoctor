@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\clases\EnvDoctor.Cli.csproj" />
+    <ProjectReference Include="..\..\src\EnvDoctor.Cli\EnvDoctor.Cli.csproj" />
   </ItemGroup>
 
 </Project>

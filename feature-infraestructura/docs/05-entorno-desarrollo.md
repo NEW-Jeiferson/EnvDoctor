@@ -29,11 +29,11 @@
 
 Escáner:
 
-    dotnet run --project feature-infraestructura/clases -- RUTA_DEL_PROYECTO
+    dotnet run --project feature-infraestructura/src/EnvDoctor.Cli -- RUTA_DEL_PROYECTO
 
 Pruebas:
 
-    dotnet test feature-infraestructura/pruebas
+    dotnet test feature-infraestructura/tests/EnvDoctor.Cli.Tests
 
 Web (puerto 8080) y base de datos, en PowerShell:
 

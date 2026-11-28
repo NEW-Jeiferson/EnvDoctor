@@ -25,12 +25,13 @@ Es la base de la que dependen el backend (formato del informe) y el frontend (c�
 
 | Elemento | Ruta | Acción |
 |---|---|---|
-| CLI del escáner | feature-infraestructura/clases | Modificar y crear |
-| Pruebas | feature-infraestructura/pruebas | Crear |
+| CLI del escáner | feature-infraestructura/src/EnvDoctor.Cli | Modificar y crear |
+| Pruebas | feature-infraestructura/tests/EnvDoctor.Cli.Tests | Crear |
 | Solución | EnvDoctor.sln | Modificar |
 | Compose | feature-infraestructura/docker | Crear |
 | Imagen web | feature-frontend/Dockerfile | Crear |
 | Documentos | docs y feature-infraestructura/docs | Crear y modificar |
+| Organización de carpetas | feature-infraestructura, feature-backend, feature-frontend | Mover |
 
 ## 5. Análisis de impacto
 
