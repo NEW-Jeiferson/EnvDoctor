@@ -9,7 +9,7 @@
 | Fecha | 2026-11-27 |
 | Tipo | Normal |
 | Prioridad | Alta |
-| Estado | En revisión |
+| Estado | Implementado |
 | Fase | 1 |
 | Rama y pull request | feature/infraestructura hacia develop |
 
@@ -72,13 +72,13 @@ Revertir el pull request con un nuevo pull request (git revert). No hay datos ni
 | Integrante | Rol | Decisión | Fecha | Comentarios |
 |---|---|---|---|---|
 | | A | Solicitante | 2026-11-27 | |
-| | B | Pendiente | | |
-| | C | Pendiente | | |
+| | B | Sin revisión | | No participó en la aprobación del pull request |
+| Ronald | C | Aprobado | 2026-11-27 | Vio todo bien |
 
 ## 11. Cierre
 
 | Campo | Valor |
 |---|---|
-| Fecha de implementación | Pendiente |
-| Resultado | Pendiente |
-| Versión o etiqueta | v0.1.0 |
+| Fecha de implementación | 2026-11-27 |
+| Resultado | Unido a develop con el pull request #2 |
+| Versión o etiqueta | v0.1.0 (se etiqueta al cerrar la Fase 1) |

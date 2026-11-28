@@ -4,7 +4,7 @@
 **Versión:** 0.1  
 **Fecha:** 2026-11-27
 
-**Estado:** propuesta de A, pendiente de acuerdo con B.
+**Estado:** propuesta de A, revisada por C; pendiente de acuerdo con B.
 
 ## Formato
 
